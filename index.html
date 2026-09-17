@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Jago Web - Jasa Pembuatan Website Profesional</title>
+  <meta name="description" content="Tingkatkan omzet bisnis Anda bersama Jago Web. Pembuatan website instan, high-converting, loading kilat, dan mobile-friendly." />
+  <link rel="canonical" href="https://jagoweb.biz.id/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="Jago Web" />
+  <meta property="og:title" content="Jago Web - Jasa Pembuatan Website Profesional" />
+  <meta property="og:description" content="Tingkatkan omzet bisnis Anda bersama Jago Web. Pembuatan website instan, high-converting, loading kilat, dan mobile-friendly." />
+  <meta property="og:url" content="https://jagoweb.biz.id/" />
+  <meta property="og:image" content="https://jagoweb.biz.id/src/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jago Web - Website Profesional, Bisnis Makin Jago" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jago Web - Jasa Pembuatan Website Profesional" />
+  <meta name="twitter:description" content="Tingkatkan omzet bisnis Anda bersama Jago Web. Pembuatan website instan, high-converting, loading kilat, dan mobile-friendly." />
+  <meta name="twitter:image" content="https://jagoweb.biz.id/src/og.png" />
+
+  <!-- Favicon & App Icons — source lokal di folder src/ -->
+  <link rel="icon" href="src/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="src/logo-jago-web.png" />
+  <link rel="apple-touch-icon" href="src/logo-jago-web.png" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="preload" as="image" href="src/logo-jago-web.png" fetchpriority="high" />
+
+  <!-- Structured Data: Organisasi & Layanan -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://jagoweb.biz.id/#business",
+        "name": "Jago Web",
+        "url": "https://jagoweb.biz.id/",
+        "image": "https://jagoweb.biz.id/src/logo-jago-web.png",
+        "description": "Jasa pembuatan website profesional: landing page high-converting, company profile, dan toko online yang cepat serta mobile-friendly.",
+        "telephone": "+62-821-2341-0243",
+        "email": "halo@jagoweb.biz.id",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Terusan Jl. Golf III No.Kav. 3, RT.003/RW.001, Cisaranten Wetan, Kec. Cinambo",
+          "addressLocality": "Kota Bandung",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "40293",
+          "addressCountry": "ID"
+        },
+        "areaServed": "ID",
+        "priceRange": "Rp 525rb - Rp 2.023jt",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Paket Pembuatan Website",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Landing Page Siap Iklan",
+              "price": "525000",
+              "priceCurrency": "IDR",
+              "priceValidUntil": "2026-09-30"
+            },
+            {
+              "@type": "Offer",
+              "name": "Company Profile Pro",
+              "price": "1049300",
+              "priceCurrency": "IDR",
+              "priceValidUntil": "2026-09-30"
+            },
+            {
+              "@type": "Offer",
+              "name": "Toko Online & Custom Web",
+              "price": "2023000",
+              "priceCurrency": "IDR",
+              "priceValidUntil": "2026-09-30"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jagoweb.biz.id/#website",
+        "url": "https://jagoweb.biz.id/",
+        "name": "Jago Web",
+        "inLanguage": "id"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          screens: {
+            'xs': '375px',
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            accent: '#0ea5e9',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+              '50%': { opacity: 0.85, transform: 'scale(1.03)' },
+            }
+          },
+          animation: {
+            marquee: 'marquee 28s linear infinite',
+            'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Safe-area handling for notch devices */
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+    /* Hide scrollbar for category filter tab bar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Smooth drag transition */
+    .carousel-dragging {
+      cursor: grabbing !important;
+      user-select: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden selection:bg-indigo-600 selection:text-white flex flex-col min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-2.5 group" aria-label="Jago Web - Beranda">
+          <img src="src/logo-jago-web.png" alt="Logo Jago Web" width="40" height="40" fetchpriority="high" decoding="async" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl object-contain shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200" />
+          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
+            Jago<span class="text-indigo-600">Web</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8 font-semibold text-slate-600 text-sm">
+          <a href="#hero" class="hover:text-indigo-600 transition-colors py-1">Beranda</a>
+          <a href="#services" class="hover:text-indigo-600 transition-colors py-1">Layanan</a>
+          <a href="#portfolio" class="hover:text-indigo-600 transition-colors py-1">Portofolio</a>
+          <a href="#features" class="hover:text-indigo-600 transition-colors py-1">Keunggulan</a>
+          <a href="#pricing" class="hover:text-indigo-600 transition-colors py-1">Harga</a>
+          <a href="#testimonials" class="hover:text-indigo-600 transition-colors py-1">Testimoni</a>
+        </nav>
+
+        <!-- CTA Header -->
+        <div class="hidden md:flex items-center">
+          <button onclick="orderProduct('Konsultasi Gratis Header')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-indigo-600 text-white font-semibold text-sm shadow-md shadow-indigo-600/20 hover:bg-indigo-700 hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+            Konsultasi Gratis
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button with Touch-friendly Area -->
+        <button id="menu-btn" class="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl text-slate-700 hover:bg-slate-100 active:bg-slate-200 transition-colors focus:outline-none" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <i id="menu-icon" class="fa-solid fa-bars text-2xl transition-transform duration-200"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation with Smooth Height Transition -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl max-h-[85vh] overflow-y-auto">
+      <a href="#hero" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Beranda</a>
+      <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Layanan</a>
+      <a href="#portfolio" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Portofolio</a>
+      <a href="#features" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Keunggulan</a>
+      <a href="#pricing" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Harga</a>
+      <a href="#testimonials" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 active:bg-indigo-100">Testimoni</a>
+      
+      <div class="pt-3">
+        <button onclick="orderProduct('Konsultasi Gratis Mobile')" class="w-full min-h-[48px] inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-indigo-600 text-white font-bold text-base shadow-md hover:bg-indigo-700 active:scale-[0.99] transition-all">
+          <i class="fa-brands fa-whatsapp text-xl text-emerald-300"></i>
+          Konsultasi via WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-24 pb-16 sm:pt-32 sm:pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-indigo-50/80 via-white to-slate-50 overflow-hidden">
+    <!-- Ambient Blur -->
+    <div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+      <div class="absolute top-12 left-1/2 -translate-x-1/2 w-[320px] sm:w-[600px] lg:w-[800px] h-[260px] sm:h-[350px] bg-indigo-400/20 blur-[90px] sm:blur-[130px] rounded-full"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Text Content -->
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-100/90 text-indigo-700 text-xs sm:text-sm font-bold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span>
+            Web Development & Conversion Specialist
+          </div>
+          
+          <h1 class="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.2] sm:leading-[1.15]">
+            Bikin Website Modern, <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-sky-500">Cepat & Siap Closing</span> Omzet Melejit!
+          </h1>
+          
+          <p class="text-sm xs:text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Jago Web merancang landing page dan website bisnis berstandar premium, loading kilat di bawah 2 detik, serta dioptimasi penuh agar pengunjung langsung klik beli via WhatsApp.
+          </p>
+          
+          <!-- Call To Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3.5 sm:gap-4 justify-center lg:justify-start pt-1 sm:pt-3">
+            <button onclick="orderProduct('Konsultasi Utama Hero')" class="w-full sm:w-auto min-h-[50px] inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-4 rounded-xl bg-indigo-600 text-white font-bold text-base shadow-lg shadow-indigo-600/30 hover:bg-indigo-700 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+              Mulai Konsultasi Gratis
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+            <a href="#portfolio" class="w-full sm:w-auto min-h-[50px] inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-4 rounded-xl bg-white border border-slate-300 text-slate-700 font-semibold text-base hover:bg-slate-50 hover:border-slate-400 active:bg-slate-100 transition-all duration-200 shadow-sm">
+              Lihat Portofolio Kami
+            </a>
+          </div>
+
+          <!-- Trust Badges Checklist -->
+          <div class="pt-2 sm:pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2.5 text-xs sm:text-sm text-slate-600 font-medium">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Pengerjaan 3 - 7 Hari
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Free Domain & Cloud Hosting
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Integrasi Pixel & G-Analytics
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Showcase dengan badge overlap kiri bawah gambar -->
+        <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+          <div class="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
+            <!-- Main Preview Card -->
+            <div class="rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl border border-slate-200/90 bg-white">
+              <div class="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Dashboard Analytics Preview" class="w-full h-full object-cover object-top" loading="lazy" />
+              </div>
+              <div class="p-4 sm:p-5 bg-white space-y-3">
+                <div class="flex items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold shrink-0">
+                      <i class="fa-solid fa-gauge-high text-base sm:text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Kecepatan Mobile</p>
+                      <p class="text-xs sm:text-sm font-bold text-slate-900">Core Web Vitals 99/100</p>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold rounded-full shrink-0">A+ Grade</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge: overlap di kiri bawah area gambar (tidak menutupi info bar) -->
+            <div class="absolute z-10 left-3 sm:left-4 lg:-left-5 bottom-[76px] sm:bottom-[88px] bg-white p-3.5 sm:p-4 rounded-xl shadow-xl border border-slate-200/90 flex items-center gap-3 max-w-[240px]">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600 text-lg sm:text-xl font-bold shrink-0">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Peningkatan Closing</p>
+                <p class="text-base sm:text-lg font-extrabold text-slate-900 leading-tight">+340% Penjualan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY (MARQUEE) -->
+  <section class="py-8 sm:py-10 bg-white border-y border-slate-200/80 overflow-hidden select-none">
+    <div class="max-w-7xl mx-auto px-4 mb-5 text-center">
+      <p class="text-[11px] sm:text-xs uppercase tracking-widest text-slate-400 font-extrabold">Telah Dipercaya oleh 150+ Bisnis & Brand di Seluruh Indonesia</p>
+    </div>
+    <div class="relative w-full overflow-hidden">
+      <!-- Gradient Fades for Smooth Edges -->
+      <div class="absolute top-0 bottom-0 left-0 w-12 sm:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute top-0 bottom-0 right-0 w-12 sm:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+      <div class="marquee-track flex gap-8 sm:gap-14 items-center whitespace-nowrap animate-marquee w-max py-1">
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-building-columns"></i> ARTHA CAPITAL</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-mug-hot"></i> KALA COFFEE ROASTER</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-shirt"></i> MODE NUSA APPAREL</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-house-chimney"></i> GRIYA PROPERTY</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-stethoscope"></i> MEDIKA HEALTHCARE</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-briefcase"></i> PRIMA CONSULTING</span>
+        
+        <!-- Duplicated items for seamless marquee loop -->
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-building-columns"></i> ARTHA CAPITAL</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-mug-hot"></i> KALA COFFEE ROASTER</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-shirt"></i> MODE NUSA APPAREL</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-house-chimney"></i> GRIYA PROPERTY</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-stethoscope"></i> MEDIKA HEALTHCARE</span>
+        <span class="flex items-center gap-2 font-bold text-slate-400 text-base sm:text-lg tracking-wider"><i class="fa-solid fa-briefcase"></i> PRIMA CONSULTING</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-16 sm:py-20 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-indigo-600 font-extrabold">Solusi Pembuatan Website</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Kategori Website yang Siap Mendongkrak Bisnis Anda</h2>
+        <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto">Dirancang khusus sesuai corong pemasaran (sales funnel) agar kunjungan website berujung transaksi nyata.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl sm:text-2xl mb-5">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">High-Converting Landing Page</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Satu halaman terarah untuk kampanye Meta Ads & Google Ads. Didesain spesifik dengan copywriting hipnotik yang mengunci perhatian calon pelanggan.
+            </p>
+          </div>
+          <button onclick="orderProduct('Landing Page Conversion')" class="w-full min-h-[46px] py-2.5 px-4 rounded-xl bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white font-semibold text-sm transition-all duration-200 flex items-center justify-center gap-2">
+            Pesan Layanan Ini <i class="fa-solid fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-indigo-500 shadow-md shadow-indigo-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-6 px-3 py-0.5 bg-indigo-600 text-white rounded-full text-[11px] font-bold uppercase tracking-wider">
+            Paling Populer
+          </div>
+          <div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-xl sm:text-2xl mb-5 shadow-md shadow-indigo-600/30">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">Company Profile Korporasi</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Membangun otoritas bisnis profesional di mata klien B2B, investor, dan instansi tender. Lengkap dengan profil, visi-misi, katalog jasa, dan legalitas.
+            </p>
+          </div>
+          <button onclick="orderProduct('Company Profile Profesional')" class="w-full min-h-[46px] py-2.5 px-4 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 font-semibold text-sm shadow-md transition-all duration-200 flex items-center justify-center gap-2">
+            Pesan Layanan Ini <i class="fa-solid fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+          <div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl sm:text-2xl mb-5">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">Toko Online & Katalog Digital</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Display ratusan produk secara teratur dengan sistem kategori cerdas, filter harga/varian, serta fitur checkout instan ke admin WhatsApp Anda.
+            </p>
+          </div>
+          <button onclick="orderProduct('Toko Online WhatsApp')" class="w-full min-h-[46px] py-2.5 px-4 rounded-xl bg-sky-50 text-sky-700 hover:bg-sky-600 hover:text-white font-semibold text-sm transition-all duration-200 flex items-center justify-center gap-2">
+            Pesan Layanan Ini <i class="fa-solid fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION: 9 ITEMS CAROUSEL WITH CATEGORY FILTERS & SWIPE -->
+  <section id="portfolio" class="py-16 sm:py-20 md:py-24 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header with Controls -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-6">
+        <div class="space-y-2">
+          <p class="text-xs uppercase tracking-widest text-indigo-600 font-extrabold">Portofolio Kami</p>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Karya Terbaik yang Telah Kami Bangun</h2>
+          <p class="text-slate-500 text-xs sm:text-sm">Swipe jari pada ponsel atau gunakan panah navigasi untuk melihat semua studi kasus live.</p>
+        </div>
+
+        <!-- Carousel Controller Buttons (min touch target >= 44px) -->
+        <div class="flex items-center gap-3 self-end md:self-auto">
+          <button id="carousel-prev" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-slate-300 bg-white text-slate-700 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:scale-95 transition-all duration-200 shadow-sm disabled:opacity-30 disabled:pointer-events-none" aria-label="Portofolio sebelumnya">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="carousel-next" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-slate-300 bg-white text-slate-700 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 active:scale-95 transition-all duration-200 shadow-sm disabled:opacity-30 disabled:pointer-events-none" aria-label="Portofolio berikutnya">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs: Horizontal scrollable on mobile -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-4 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+        <button onclick="filterPortfolio('all')" class="filter-btn active-filter px-4 py-2 rounded-full text-xs sm:text-sm font-bold shrink-0 bg-indigo-600 text-white transition-colors">
+          Semua Proyek
+        </button>
+        <button onclick="filterPortfolio('saas')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shrink-0 bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+          SaaS & Finansial
+        </button>
+        <button onclick="filterPortfolio('ecommerce')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shrink-0 bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+          E-Commerce
+        </button>
+        <button onclick="filterPortfolio('corporate')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shrink-0 bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+          Profil Perusahaan
+        </button>
+        <button onclick="filterPortfolio('umkm')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shrink-0 bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+          UMKM
+        </button>
+      </div>
+
+      <!-- Carousel Viewport with Touch/Mouse Drag Support -->
+      <div class="overflow-hidden cursor-grab" id="carousel-viewport">
+        <!-- Carousel Track -->
+        <div id="carousel-track" class="flex transition-transform duration-300 ease-out select-none will-change-transform -mx-3">
+          
+          <!-- Portofolio 1 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="saas">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Fintech Dashboard Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">SaaS & Finansial</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Artha Capital Management</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Web korporasi dengan kalkulator simulasi portofolio investasi dan verifikasi KYC terintegrasi.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Artha Capital')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 2 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="ecommerce umkm">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=80" alt="Fashion Store Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">E-Commerce Fashion</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Mode Nusa Official</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Katalog apparel interaktif dengan checkout instan otomatis tersambung ke CS WhatsApp.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Mode Nusa')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 3 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="corporate">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Villa & Resort Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Hospitality & Villa</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Segara Luxury Villa Ubud</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Website direct-booking villa privat tanpa potongan komisi OTA dengan virtual gallery 360.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Segara Villa')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 4 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="corporate">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="Klinik Kesehatan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Kesehatan & Klinik</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Medika Prime Specialist</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Reservasi janji temu dokter online dengan notifikasi reminder SMS & WhatsApp otomatis.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Medika Prime')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 5 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="ecommerce umkm">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80" alt="Cafe & Bistro Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">F&B & Roastery</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Kala Artisan Roastery</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Website menu barcode digital, kisah beans single-origin, dan pembelian biji kopi fresh roast.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Kala Coffee')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 6 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="corporate">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80" alt="Property Real Estate Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Properti & Cluster</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Griya Nirwana Residence</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Landing page download e-brosur perumahan, denah cluster 3D, dan kalkulator simulasi KPR.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Griya Nirwana')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 7 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="corporate">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Firma Hukum Konsultan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Konsultan & Legal</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Nirwana Legal Partners</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Company profile kredibel untuk konsultan hukum bisnis, merger, dan pengurusan HAKI.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Nirwana Legal')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 8 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="ecommerce umkm">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Skincare Cosmetics Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Skincare & Kosmetik</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">AuraGlow Dermacare</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Sales page viral dengan video review pengguna, sertifikasi BPOM/Halal, dan bundle checkout.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip AuraGlow')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 9 -->
+          <div class="portfolio-card w-full sm:w-1/2 lg:w-1/3 shrink-0 px-3" data-category="saas">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group h-full flex flex-col justify-between">
+              <div>
+                <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+                  <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80" alt="Logistik Cargo Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" loading="lazy" />
+                  <span class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-800 shadow-sm">Logistik & Ekspedisi</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Lintas Samudera Cargo</h3>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-4 leading-relaxed">Website tracking resi terintegrasi API ekspedisi laut & udara serta pemesanan armada armada.</p>
+                </div>
+              </div>
+              <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                <button onclick="orderProduct('Website Mirip Lintas Samudera')" class="w-full min-h-[42px] py-2 px-3 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white font-semibold text-xs transition-colors duration-200">
+                  Buat Website Seperti Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div id="carousel-dots" class="flex justify-center items-center gap-2 mt-7"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="features" class="py-16 sm:py-20 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-indigo-600 font-extrabold mb-2.5">Mengapa Harus Jago Web?</p>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5">
+            Bukan Sekadar Desain Indah, Kami Membangun Mesin Penghasil Penjualan.
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
+            Banyak website membuang biaya iklan karena lambat dan tidak responsif. Di Jago Web, kami menyeimbangkan arsitektur kencang, UI/UX rapi, dan psikologi copywriting.
+          </p>
+
+          <div class="space-y-4 sm:space-y-5">
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-gauge-high text-base sm:text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-base sm:text-lg">Kecepatan Loading Kilat</h3>
+                <p class="text-slate-500 text-xs sm:text-sm mt-0.5 leading-relaxed">Website terbuka dalam sekejap (&lt; 2 detik), mengurangi potensi bounce rate hingga 70%.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-mobile-screen-button text-base sm:text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-lg">Mobile-First Optimization</h3>
+                <p class="text-slate-500 text-xs sm:text-sm mt-0.5 leading-relaxed">90% pembeli menggunakan ponsel pintar. Kami memastikan tampilan tombol dan navigasi di HP sempurna.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-halved text-base sm:text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-800 text-base sm:text-lg">Keamanan SSL & Backup Rutin</h3>
+                <p class="text-slate-500 text-xs sm:text-sm mt-0.5 leading-relaxed">Sertifikat SSL gratis, firewall anti-DDoS Cloudflare, dan perlindungan backup berkala.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Grid: Designed safely for narrow phone screens (320px - 480px) -->
+        <div class="grid grid-cols-2 gap-3.5 sm:gap-5 mt-4 lg:mt-0">
+          <div class="space-y-3.5 sm:space-y-5">
+            <div class="bg-indigo-600 text-white p-4 sm:p-7 rounded-2xl shadow-lg flex flex-col justify-center">
+              <p class="text-3xl xs:text-4xl sm:text-5xl font-extrabold mb-1">99.9%</p>
+              <p class="text-indigo-100 text-xs sm:text-sm font-medium">Uptime Server Global</p>
+            </div>
+            <div class="bg-white p-4 sm:p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-center">
+              <p class="text-3xl xs:text-4xl sm:text-5xl font-extrabold text-slate-900 mb-1">3 Hari</p>
+              <p class="text-slate-500 text-xs sm:text-sm font-medium">Rata-rata Waktu Launching</p>
+            </div>
+          </div>
+          <div class="space-y-3.5 sm:space-y-5 sm:mt-6">
+            <div class="bg-white p-4 sm:p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-center">
+              <p class="text-3xl xs:text-4xl sm:text-5xl font-extrabold text-slate-900 mb-1">150+</p>
+              <p class="text-slate-500 text-xs sm:text-sm font-medium">Klien Aktif Puas</p>
+            </div>
+            <div class="bg-sky-500 text-white p-4 sm:p-7 rounded-2xl shadow-lg flex flex-col justify-center">
+              <p class="text-3xl xs:text-4xl sm:text-5xl font-extrabold mb-1">24/7</p>
+              <p class="text-sky-100 text-xs sm:text-sm font-medium">Support & Konsultasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="py-16 sm:py-20 md:py-24 bg-white border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-indigo-600 font-extrabold">Paket Investasi</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Transparan, Tanpa Biaya Tersembunyi</h2>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs sm:text-sm font-bold">
+          <i class="fa-solid fa-tag"></i> Promo September — Diskon 30% Semua Paket
+        </div>
+        <p class="text-slate-600 text-xs sm:text-sm sm:text-base">Semua paket sudah termasuk Domain, Cloud Hosting, dan Maintenance tahun pertama.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+        <!-- Paket 1 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="mb-4">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Landing Page Siap Iklan</h3>
+              <p class="text-xs text-slate-500">Ideal untuk uji pasar & direct closing WhatsApp</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <s class="text-slate-400 text-sm sm:text-base font-semibold">Rp 750.000</s>
+                <span class="px-2 py-0.5 bg-rose-100 text-rose-700 text-[11px] font-bold rounded-full">-30%</span>
+              </div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900">Rp 525.000</span>
+              <span class="text-slate-500 text-xs sm:text-sm">/tahun</span>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> 1 Halaman Sales Funnel</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Gratis Domain .com / .my.id (1 Thn)</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Cloud Hosting Cepat</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Integrasi Tombol WhatsApp CS</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Revisi Konten 2x</li>
+            </ul>
+          </div>
+          <button onclick="orderProduct('Paket Landing Page PROMO September (Rp 525rb)')" class="w-full min-h-[48px] py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-bold hover:bg-indigo-600 hover:text-white active:bg-indigo-700 transition-colors duration-200">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Paket 2 (Highlighted: offset only on large screens lg:) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-indigo-600 shadow-xl relative flex flex-col justify-between lg:-translate-y-3">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap shadow-sm">
+            Rekomendasi Utama
+          </div>
+          <div>
+            <div class="mb-4 mt-2 sm:mt-0">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Company Profile Pro</h3>
+              <p class="text-xs text-slate-500">Sempurna untuk kredibilitas korporasi & UKM</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <s class="text-slate-400 text-sm sm:text-base font-semibold">Rp 1.499.000</s>
+                <span class="px-2 py-0.5 bg-rose-100 text-rose-700 text-[11px] font-bold rounded-full">-30%</span>
+              </div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-indigo-600">Rp 1.049.300</span>
+              <span class="text-slate-500 text-xs sm:text-sm">/tahun</span>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Hingga 5 Halaman Lengkap</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Gratis Domain .com / .id (1 Thn)</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Cloud NVMe Unlimited Bandwidth</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> 3 Akun Email Bisnis (@namabisnis)</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Integrasi Google Maps & Analytics</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Revisi 4x + Garansi 6 Bulan</li>
+            </ul>
+          </div>
+          <button onclick="orderProduct('Paket Company Profile PROMO September (Rp 1.049rb)')" class="w-full min-h-[48px] py-3.5 rounded-xl bg-indigo-600 text-white font-bold hover:bg-indigo-700 active:bg-indigo-800 shadow-lg shadow-indigo-600/30 transition-all duration-200">
+            Pilih Paket Pro
+          </button>
+        </div>
+
+        <!-- Paket 3 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="mb-4">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Toko Online & Custom Web</h3>
+              <p class="text-xs text-slate-500">Untuk katalog produk & fitur checkout lengkap</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <s class="text-slate-400 text-sm sm:text-base font-semibold">Rp 2.890.000</s>
+                <span class="px-2 py-0.5 bg-rose-100 text-rose-700 text-[11px] font-bold rounded-full">-30%</span>
+              </div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900">Rp 2.023.000</span>
+              <span class="text-slate-500 text-xs sm:text-sm">/tahun</span>
+            </div>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Fitur Katalog Ratusan Produk</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Hitung Ongkir Otomatis Ekspedisi</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Dashboard Pengelola Konten (CMS)</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Video Panduan Admin</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 shrink-0"></i> Support Prioritas 1 Tahun Penuh</li>
+            </ul>
+          </div>
+          <button onclick="orderProduct('Paket Toko Online PROMO September (Rp 2.023jt)')" class="w-full min-h-[48px] py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-bold hover:bg-indigo-600 hover:text-white active:bg-indigo-700 transition-colors duration-200">
+            Pilih Paket Toko Online
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-16 sm:py-20 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-indigo-600 font-extrabold">Ulasan Klien</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Kepuasan Nyata Pemilik Bisnis</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Testi 1 -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              "Landing page buatan Jago Web terbukti meningkatkan rasio konversi iklan kami. Desainnya elegan dan respon tombol WhatsApp-nya sangat cepat."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Rina Handayani" class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover shrink-0" loading="lazy" />
+            <div>
+              <p class="font-bold text-slate-900 text-sm">Rina Handayani</p>
+              <p class="text-[11px] sm:text-xs text-slate-500">Founder AuraGlow Dermacare</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 2 -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              "Sangat profesional. Dalam 4 hari company profile kami sudah selesai dengan tampilan modern yang meyakinkan partner B2B kami."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Budi Santoso" class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover shrink-0" loading="lazy" />
+            <div>
+              <p class="font-bold text-slate-900 text-sm">Budi Santoso</p>
+              <p class="text-[11px] sm:text-xs text-slate-500">Direktur Lintas Samudera</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 3 -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 gap-1 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              "Pelayanan ramah dan solutif. Website direct-booking vila kami langsung mendatangkan reservasi tanpa terpotong komisi platform lain."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Made Wijaya" class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover shrink-0" loading="lazy" />
+            <div>
+              <p class="font-bold text-slate-900 text-sm">Made Wijaya</p>
+              <p class="text-[11px] sm:text-xs text-slate-500">Owner Segara Luxury Villa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="py-14 sm:py-16 md:py-20 bg-gradient-to-r from-indigo-700 via-indigo-600 to-sky-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-5 sm:space-y-6">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Siap Memiliki Website yang Menghasilkan Omzet?</h2>
+      <p class="text-indigo-100 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Konsultasikan konsep website bisnis Anda sekarang tanpa dipungut biaya. Kami siap memberikan preview dan penawaran terbaik hari ini.
+      </p>
+      <div class="pt-2">
+        <button onclick="orderProduct('Konsultasi via Banner CTA')" class="w-full sm:w-auto min-h-[52px] inline-flex items-center justify-center gap-3 px-7 sm:px-9 py-3.5 sm:py-4 rounded-xl bg-white text-indigo-700 font-extrabold text-sm sm:text-base shadow-2xl hover:bg-indigo-50 hover:scale-105 active:scale-100 transition-all duration-200">
+          <i class="fa-brands fa-whatsapp text-2xl text-emerald-500"></i>
+          Chat WhatsApp Sekarang Bersama Tim Ahli
+        </button>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 pt-12 sm:pt-16 pb-12 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-slate-800">
+        <!-- Brand -->
+        <div class="space-y-4 sm:col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2.5">
+            <img src="src/logo-jago-web.png" alt="Logo Jago Web" width="36" height="36" loading="lazy" decoding="async" class="w-9 h-9 rounded-lg object-contain" />
+            <span class="text-2xl font-extrabold tracking-tight text-white">
+              Jago<span class="text-indigo-400">Web</span>
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm leading-relaxed text-slate-400">
+            Partner terpercaya pembangunan landing page, website perusahaan, dan toko online berkinerja tinggi di Indonesia.
+          </p>
+          <div class="flex gap-3 pt-1">
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-indigo-600 hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-indigo-600 hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-indigo-600 hover:text-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="space-y-3">
+          <p class="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Layanan</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#services" class="hover:text-white transition-colors">Landing Page Iklan</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Company Profile</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Toko Online WhatsApp</a></li>
+            <li><a href="#portfolio" class="hover:text-white transition-colors">9 Portofolio Website</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <p class="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Navigasi</p>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="#hero" class="hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="#portfolio" class="hover:text-white transition-colors">Portofolio</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Keunggulan</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Paket Harga</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Ulasan Klien</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-3 sm:col-span-2 md:col-span-1">
+          <p class="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Kontak Kami</p>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot mt-1 text-indigo-400 shrink-0"></i>
+              <span>Jl. Terusan Jl. Golf III No.Kav. 3, RT.003/RW.001 Cisaranten Wetan, Kec. Cinambo, Kota Bandung, Jawa Barat 40293</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-indigo-400 shrink-0"></i>
+              <a href="https://wa.me/6282123410243" target="_blank" rel="noopener" class="hover:text-white transition-colors">+62 821-2341-0243</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-indigo-400 shrink-0"></i>
+              <a href="mailto:halo@jagoweb.biz.id" class="hover:text-white transition-colors">halo@jagoweb.biz.id</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <p class="text-center sm:text-left">&copy; 2026 Jago Web Indonesia. All rights reserved.</p>
+        <div class="flex gap-4 sm:gap-6">
+          <a href="#" class="hover:text-slate-400">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-slate-400">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (OPTIMIZED SAFE CORNER) -->
+  <aside class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 group">
+    <!-- Mini Live Tooltip on Hover/Desktop -->
+    <div class="hidden sm:flex items-center gap-2 bg-white px-3 py-1.5 rounded-full shadow-lg border border-slate-100 text-xs font-semibold text-slate-700 pointer-events-none transition-all group-hover:scale-105">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      Online | Konsultasi Cepat
+    </div>
+
+    <!-- WhatsApp Trigger Button -->
+    <button 
+      onclick="orderProduct('Konsultasi Cepat (Floating Widget)')" 
+      class="flex items-center justify-center w-13 h-13 sm:w-15 sm:h-15 w-[52px] h-[52px] sm:w-[60px] sm:h-[60px] rounded-full bg-emerald-500 text-white shadow-2xl hover:bg-emerald-600 hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-emerald-400/50"
+      aria-label="Hubungi WhatsApp Langsung"
+    >
+      <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+    </button>
+  </aside>
+
+  <!-- JAVASCRIPT: LOGIC, CAROUSEL TOUCH ENGINE & ACCESSIBILITY -->
+  <script>
+    // 1. Mobile Menu Toggle with Scroll Lock
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMobileMenu(forceClose = false) {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (forceClose || !isHidden) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+        menuBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden'; // prevent background body scrolling
+      }
+    }
+
+    menuBtn.addEventListener('click', () => toggleMobileMenu());
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => toggleMobileMenu(true));
+    });
+
+    // 2. WhatsApp Direct Redirect Function
+    function orderProduct(productName) {
+      const phone = '6282123410243';
+      const text = encodeURIComponent('Halo Jago Web, saya tertarik dengan ' + productName + '. Bisa berikan info lebih lengkap?');
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+
+    // 3. Carousel Engine with Responsive Cards, Filter & Touch Drag
+    const viewport = document.getElementById('carousel-viewport');
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const allCards = Array.from(document.querySelectorAll('.portfolio-card'));
+
+    let activeCards = [...allCards];
+    let currentIndex = 0;
+
+    // Filter Logic
+    function filterPortfolio(category) {
+      // Update UI buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white', 'active-filter');
+        btn.classList.add('bg-slate-100', 'text-slate-600');
+      });
+      event.target.classList.remove('bg-slate-100', 'text-slate-600');
+      event.target.classList.add('bg-indigo-600', 'text-white', 'active-filter');
+
+      // Filter visible cards (mendukung multi-kategori, mis. "ecommerce umkm")
+      activeCards = allCards.filter(card => {
+        const cats = (card.dataset.category || '').split(' ');
+        if (category === 'all' || cats.includes(category)) {
+          card.style.display = 'block';
+          return true;
+        } else {
+          card.style.display = 'none';
+          return false;
+        }
+      });
+
+      currentIndex = 0;
+      updateCarousel();
+    }
+
+    function getItemsPerView() {
+      if (window.innerWidth >= 1024) return 3; // Desktop: 3 items
+      if (window.innerWidth >= 640) return 2;  // Tablet/Phablet: 2 items
+      return 1;                                // Mobile: 1 item
+    }
+
+    function getMaxIndex() {
+      const perView = getItemsPerView();
+      return Math.max(0, activeCards.length - perView);
+    }
+
+    function updateCarousel() {
+      const itemsPerView = getItemsPerView();
+      const maxIndex = getMaxIndex();
+
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+      if (currentIndex < 0) currentIndex = 0;
+
+      // Translate track based on card percentage width
+      const stepPercent = 100 / itemsPerView;
+      track.style.transform = `translateX(-${currentIndex * stepPercent}%)`;
+
+      // Update button state
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= maxIndex || activeCards.length <= itemsPerView;
+
+      // Update Dots Pagination
+      const totalSteps = maxIndex + 1;
+      dotsContainer.innerHTML = '';
+
+      if (totalSteps > 1) {
+        for (let i = 0; i < totalSteps; i++) {
+          const dot = document.createElement('button');
+          dot.className = `h-2 rounded-full transition-all duration-300 ${i === currentIndex ? 'bg-indigo-600 w-6' : 'bg-slate-300 hover:bg-slate-400 w-2'}`;
+          dot.setAttribute('aria-label', `Pindah ke slide ${i + 1}`);
+          dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateCarousel();
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < getMaxIndex()) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    // Touch & Swipe Gesture Support for Mobile / Drag for Desktop
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    function getPositionX(event) {
+      return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function touchStart(index) {
+      return function(event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+        viewport.classList.add('carousel-dragging');
+        track.style.transition = 'none';
+      }
+    }
+
+    function touchMove(event) {
+      if (!isDragging) return;
+      const currentPosition = getPositionX(event);
+      const diff = currentPosition - startPos;
+      // Allow light rubber-band preview
+      const itemsPerView = getItemsPerView();
+      const stepPercent = 100 / itemsPerView;
+      const baseOffset = -currentIndex * stepPercent;
+      const percentDiff = (diff / viewport.offsetWidth) * 100;
+      track.style.transform = `translateX(${baseOffset + percentDiff}%)`;
+    }
+
+    function touchEnd(event) {
+      if (!isDragging) return;
+      isDragging = false;
+      viewport.classList.remove('carousel-dragging');
+      track.style.transition = 'transform 0.3s ease-out';
+
+      const endPos = event.type.includes('mouse') ? event.pageX : (event.changedTouches ? event.changedTouches[0].clientX : startPos);
+      const movedBy = endPos - startPos;
+
+      // Swipe threshold >= 40px
+      if (movedBy < -40 && currentIndex < getMaxIndex()) {
+        currentIndex++;
+      } else if (movedBy > 40 && currentIndex > 0) {
+        currentIndex--;
+      }
+
+      updateCarousel();
+    }
+
+    // Attach Gestures to Viewport
+    viewport.addEventListener('touchstart', touchStart(currentIndex), { passive: true });
+    viewport.addEventListener('touchmove', touchMove, { passive: true });
+    viewport.addEventListener('touchend', touchEnd);
+
+    viewport.addEventListener('mousedown', touchStart(currentIndex));
+    viewport.addEventListener('mousemove', touchMove);
+    viewport.addEventListener('mouseup', touchEnd);
+    viewport.addEventListener('mouseleave', () => {
+      if (isDragging) touchEnd({ pageX: startPos });
+    });
+
+    // Window Resize Handling
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        updateCarousel();
+      }, 100);
+    });
+
+    // Initialize View
+    updateCarousel();
+  </script>
+</body>
+</html>
