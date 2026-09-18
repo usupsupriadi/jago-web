@@ -9,11 +9,13 @@
 **Tech Stack:** Git, GitHub CLI (v2.101.0), GitHub Pages, DNS (A & CNAME Records).
 
 ## Global Constraints
+
 - Target user account: `usupsupriadi`
 - Repository name: `jago-web`
 - Repository visibility: `public`
 - Target domain: `jagoweb.biz.id`
 - CNAME www domain: `usupsupriadi.github.io.`
+
 
 ---
 
